@@ -461,5 +461,3 @@ Como todas as transações com status "FALHA" nos dados fornecidos possuem motiv
 Todas as transações com falha possuem motivo especificado. 
  */
 
-// Função auxiliar para filtrar transações válidas
-
