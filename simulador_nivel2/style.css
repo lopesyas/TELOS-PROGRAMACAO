@@ -1,0 +1,240 @@
+body {
+    background-image: url('assets/fundo-claro.png'); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.tudo { /* em telas grandes vai ter máximo 1000px - em telas pequenas, ele diminui automaticamente */
+    max-width: 1000px;
+    width: 100%;
+    background-color: white;
+    margin: 0 auto;
+    }
+
+header {
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center;
+    }
+
+.quem-somos{
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.servicos {
+    padding: 20px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+img { /* a imagem nunca vai estourar o tamanho da tela e diminui sozinha no celular. */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.botoes {
+    padding: 50px;
+    text-align: center;
+        }
+footer{
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+    background-color: #5aaed6;
+}
+
+/* Tema escuro */
+.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .servicos {
+    color:  #e0e0e0;
+}
+
+.dark-mode .tudo {
+    background-color: #111;
+    color: #e6e6e6; /* texto claro */
+}
+
+.dark-mode .card {
+    background-color: #0a3d62;
+    color: #e0e0e0;
+}
+
+/* deixa o header e o footer prontos para escurecer */
+.dark-mode header {
+    background-color: #141414;
+    color: #e0e0e0;
+}
+
+.dark-mode footer {
+    background-color: #0a3d62;
+    color: #f1f1f1;
+}
+
+.dark-mode .navbar {
+    background-color: #0a3d62;
+    color: #f1f1f1;
+}
+
+.dark-mode .navbar a {
+    color: #ffffff;
+}
+
+.dark-mode .btn-tema {
+    background-color: #666;
+    color: #ffffff;
+}
+
+.dark-mode .quem-somos{
+    background-color: #141414;
+    color: #e0e0e0;
+}
+
+.dark-mode .servicos{
+    background-color: #141414;
+    color: #e0e0e0;
+}
+
+.dark-mode .beneficios{
+    background-color: #141414;
+    color: #e0e0e0;
+}
+
+.dark-mode .botoes{
+    background-color: #141414;
+    color: #e0e0e0;
+}
+
+body.dark-mode {
+    background-image: url('assets/fundo-escuro.png'); /* Define a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+     }
+
+
+/* quando a tela for menor que 768px (celular), ele ajusta:
+– textos
+– espaçamento
+– botões
+– padding
+– layout
+*/
+@media (max-width: 768px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .tudo {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .botoes button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
+
+.btn{
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-principal{
+    background-color: #3c0a83;
+    color: white;
+}
+
+.btn-principal:hover{
+    opacity: 0.8;
+}
+
+.btn-tema {
+    background-color: #ffffff;
+    color: #3c0a83;
+    margin-top: 10px;
+}
+
+.navbar {
+    background-color: #5aaed6;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* menu no centro + botão à direita */
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+.navbar a {
+    color: #0a2a43;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+
+.navbar-botoes {
+    display: flex;
+    gap: 10px; /* espaço entre os botões */
+    align-items: center;
+}
+
+
+.beneficios{
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #89c8ea;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #1a1a1a;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
