@@ -1,0 +1,29 @@
+### Criar um novo Filme
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "title": "Interestelar",
+    "director": "Christopher Nolan",
+    "year": 2014,
+    "genre": "Ficção Científica"
+}
+
+### Listar todos os Filmes
+GET http://localhost:3000/movies
+
+### Buscar um Filme específico (substitua o ID após criar um)
+GET http://localhost:3000/movies/663b9f8e8f8e8f8e8f8e8f8e
+
+### Criar um novo Usuário
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "João Silva",
+    "email": "joao@email.com",
+    "password": "senha123"
+}
+
+### Listar todos os Usuários
+GET http://localhost:3000/users
